@@ -1,12 +1,12 @@
 
-:root{
-	--pn:#bbbbbb;
+
+
+html{
+	--pn:#BBBBBB;
 	--txt: #000000;
 	--bn: #888888;
 	--pl: #FEFEFE;
 }
-
-
 body{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -64,7 +64,7 @@ nav a:hover {
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
-	border: 2px solid #000000;
+	border: 2px solid var(--txt);
 	border-radius: 10px;
 }
 
@@ -289,7 +289,7 @@ label::after{
 input:checked + label{
 	background: #088C19;
 }
-d
+
 input:checked + label::after{
 	left: calc(100% - 25px);
 }
