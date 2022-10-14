@@ -3,9 +3,11 @@ const html = document.querySelector('html');
 
 const checkbox = document.querySelector('input[name=theme]');
 
-const getStyle = (element, style) => {
-    window.getComputedStyle(element).getPropertyPriority(style)
-}
+const getStyle = (element, style) => 
+    window
+    .getComputedStyle(element)
+    .getPropertyValue(style)
+
 
 const initialColors = {
     pn: getStyle(html, '--pn'),
@@ -24,6 +26,7 @@ const darkmode = {
 const transformKey = key => '--' + key.replace(/([A-Z])/, '-$1').toLowerCase()
 
 const changeColors = (colors) => {
+    console.log(colors)
     Object.keys(colors).map(key => {
         html.style.setProperty(transformKey(key), colors[key])
     })

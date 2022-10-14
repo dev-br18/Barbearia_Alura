@@ -9,6 +9,7 @@ html{
 }
 body{
 	font-family: 'Montserrat', sans-serif;
+	background-color: var(--pl);
 }
 
 
@@ -247,7 +248,7 @@ td, th {
 
 .principal{
 	padding: 3em 0;
-	background: var(--pl) ;
+	background: var(--pl);
 	width: 940px;
 	margin: 0 auto;
 }
@@ -258,6 +259,7 @@ input[type=checkbox]{
 	height: 0;
 	width: 0;
 	visibility: hidden;
+
 }
 
 
